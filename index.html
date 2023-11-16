@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/todo-list.js"></script>
+    <title>Making todo-list app</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <label for="new-task">Create new To Do:</label>
+            <input type="text" class="input" id="new-task" placeholder="Enter task name">
+            <button class="btn header-btn" id="btn-add">Add</button>
+        </header>
+
+        <div class="grid-row">
+            <div class="grid-col" id="div-to-do">
+                <h3 class="title">To Do</h3>
+                <div class="cards">
+                    <!-- Here will be new tasks -->
+                </div>
+            </div>
+            <div class="grid-col" id="div-in-progress">
+                <h3 class="title">In Progress</h3>
+                <div class="cards">
+                    <!-- Here will be new tasks -->
+                </div>
+            </div>
+            <div class="grid-col" id="div-done">
+                <h3 class="title">Done</h3>
+                <div class="cards">
+                    <!-- Here will be new tasks -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

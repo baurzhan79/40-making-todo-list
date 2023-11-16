@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    box-sizing: border-box;
+    text-align: center;     
+}
+
+.btn:hover {
+    background: gray;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header-btn {
+    margin: 10px;
+    padding: 5px 30px;
+}
+
+.input {
+    margin: 10px;
+    flex-grow: 1;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 450px) {
+    .grid-row {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .grid-row {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+}
+
+.grid-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.cards {
+    border: 1px solid black;
+    border-radius: 5px;
+    min-height: 200px;
+    height: 100%;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: lightgray;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.card-head-btn {
+    padding: 5px 10px;
+}
+
+.card-body {
+    margin-top: 20px;
+    display: flex;
+}
+.card-body-btn {
+    flex-grow: 1;
+}
